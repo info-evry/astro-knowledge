@@ -1,0 +1,30 @@
+{
+  "name": "Info Evry",
+  "fullName": "Association Info Evry",
+  "description": "Association étudiante de la filière informatique de l'Université d'Évry Val-d'Essonne",
+  "mission": "Promouvoir l'informatique, organiser des événements et créer une communauté entre étudiants, professeurs et professionnels",
+  "university": {
+    "name": "Université d'Évry Val-d'Essonne",
+    "shortName": "Évry",
+    "city": "Évry-Courcouronnes",
+    "department": "Essonne (91)"
+  },
+  "contact": {
+    "email": "contact@info-evry.fr",
+    "assoEmail": "asso@info-evry.fr",
+    "website": "https://info-evry.fr"
+  },
+  "social": {
+    "discord": null,
+    "instagram": null,
+    "linkedin": null
+  },
+  "membership": {
+    "benefits": [
+      "Tarifs réduits sur les événements",
+      "Accès aux goodies exclusifs",
+      "Participation aux décisions de l'association",
+      "Réseau d'anciens étudiants"
+    ]
+  }
+}

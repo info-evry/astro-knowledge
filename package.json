@@ -1,0 +1,21 @@
+{
+  "name": "@info-evry/knowledge",
+  "version": "1.0.0",
+  "description": "Shared knowledge base for Info Evry web properties",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./ndi/event": "./src/ndi/event.json",
+    "./ndi/info-evry": "./src/ndi/info-evry.json",
+    "./association": "./src/association/info.json"
+  },
+  "keywords": [
+    "info-evry",
+    "knowledge",
+    "ndi",
+    "nuit-de-linfo"
+  ],
+  "author": "Info Evry",
+  "license": "MIT"
+}

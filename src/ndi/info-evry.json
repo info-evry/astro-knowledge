@@ -1,0 +1,82 @@
+{
+  "site": {
+    "name": "Université d'Évry - Info Evry",
+    "location": "IBGBI (Institut de Biologie Génétique et de Bio-Informatique)",
+    "address": "Université d'Évry Val-d'Essonne",
+    "city": "Évry-Courcouronnes"
+  },
+  "registration": {
+    "prices": {
+      "nonMember": {
+        "amount": 7,
+        "label": "7€ (non-adhérent)"
+      },
+      "member": {
+        "amount": 5,
+        "label": "5€ (adhérent)"
+      },
+      "free": {
+        "amount": 0,
+        "label": "Gratuit (sans goodies/activités)"
+      }
+    },
+    "merchandise": {
+      "hoodie": {
+        "price": 10,
+        "label": "Sweat zippé : 10€"
+      }
+    },
+    "payment": "Sur place, en espèces ou carte bancaire"
+  },
+  "amenities": {
+    "food": {
+      "included": true,
+      "description": "Repas et boissons offerts tout au long de la nuit"
+    },
+    "networking": {
+      "description": "Échanges avec les professeurs et anciens étudiants en recherche de talents"
+    }
+  },
+  "challenges": {
+    "official": {
+      "description": "Défis proposés par les partenaires industriels sur des thèmes comme l'innovation, l'architecture et l'accessibilité"
+    },
+    "association": {
+      "name": "Défi de l'Asso",
+      "type": "Concours Photo",
+      "description": "Concours photo organisé par l'association Info Evry",
+      "categories": [
+        {
+          "id": "original",
+          "name": "Original",
+          "description": "Valorise la créativité et la singularité"
+        },
+        {
+          "id": "funny",
+          "name": "Drôle",
+          "description": "Capture les moments humoristiques ou insolites"
+        },
+        {
+          "id": "open",
+          "name": "Libre",
+          "description": "Sans restriction thématique"
+        }
+      ],
+      "rules": [
+        "Format JPG ou PNG (max 10 Mo)",
+        "Une seule photo par catégorie par participant",
+        "Soumission par email"
+      ],
+      "prizes": "Récompenses annoncées après l'événement"
+    }
+  },
+  "participants": {
+    "levels": [
+      "Étudiants de 1ère année IUT",
+      "Licence",
+      "Master",
+      "Doctorat"
+    ],
+    "description": "Des équipes d'étudiants de tous niveaux s'affrontent sur les défis de programmation"
+  }
+}
