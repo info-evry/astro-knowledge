@@ -9,15 +9,47 @@
     "city": "Évry-Courcouronnes",
     "department": "Essonne (91)"
   },
+  "sites": {
+    "asso": {
+      "url": "https://asso.info-evry.fr",
+      "name": "Site de l'association"
+    },
+    "ndi": {
+      "url": "https://ndi.info-evry.fr",
+      "name": "Inscriptions NDI"
+    }
+  },
   "contact": {
     "email": "contact@info-evry.fr",
-    "assoEmail": "asso@info-evry.fr",
-    "website": "https://info-evry.fr"
+    "assoEmail": "asso@info-evry.fr"
   },
   "social": {
-    "discord": null,
-    "instagram": null,
-    "linkedin": null
+    "discord": {
+      "url": "https://discord.gg/Vs68DHY",
+      "label": "Discord"
+    },
+    "telegram": {
+      "url": "https://t.me/info_evry",
+      "label": "Telegram"
+    },
+    "instagram": {
+      "url": "https://instagram.com/info_evry",
+      "label": "Instagram"
+    },
+    "github": {
+      "url": "https://github.com/info-evry",
+      "label": "GitHub"
+    }
+  },
+  "resources": {
+    "drive": {
+      "url": "https://e.pcloud.link/publink/show?code=kZM9fuZgiv5bvrT6lbai85mEDTDGHuDqyQk",
+      "label": "Drive partagé"
+    },
+    "ecampus": {
+      "url": "https://ecampus.paris-saclay.fr",
+      "label": "eCampus"
+    }
   },
   "membership": {
     "benefits": [
