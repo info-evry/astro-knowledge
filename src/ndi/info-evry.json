@@ -1,6 +1,6 @@
 {
   "site": {
-    "name": "Université d'Évry - Info Evry",
+    "name": "Université d'Évry - Asso Info Evry",
     "location": "IBGBI (Institut de Biologie Génétique et de Bio-Informatique)",
     "address": "Université d'Évry Val-d'Essonne",
     "city": "Évry-Courcouronnes"
@@ -44,7 +44,7 @@
     "association": {
       "name": "Défi de l'Asso",
       "type": "Concours Photo",
-      "description": "Concours photo organisé par l'association Info Evry",
+      "description": "Concours photo organisé par l'Asso Info Evry",
       "categories": [
         {
           "id": "original",

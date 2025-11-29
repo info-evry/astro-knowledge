@@ -1,6 +1,6 @@
-# Info Evry Knowledge Base
+# Asso Info Evry Knowledge Base
 
-Shared content and information for all Info Evry web properties.
+Shared content and information for all Asso Info Evry web properties.
 
 ## Structure
 
