@@ -15,8 +15,12 @@
       "name": "Site de l'association"
     },
     "ndi": {
-      "url": "https://ndi.info-evry.fr",
+      "url": "https://asso.info-evry.fr/nuit-de-linfo",
       "name": "Inscriptions NDI"
+    },
+    "join": {
+      "url": "https://asso.info-evry.fr/adhesion",
+      "name": "Adhésion"
     }
   },
   "contact": {
