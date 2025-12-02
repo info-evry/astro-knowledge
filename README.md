@@ -146,4 +146,4 @@ Auto-generated at build time:
 
 ## License
 
-MIT - Asso Info Evry
+AGPL-3.0 - Asso Info Evry
