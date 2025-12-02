@@ -1,39 +1,61 @@
-# Asso Info Evry Knowledge Base
+# @info-evry/astro-knowledge
 
-Shared content and information for all Asso Info Evry web properties.
+Shared content and data for all Asso Info Evry web properties. Provides centralized information about the association, events, and computed values.
+
+## Features
+
+- Centralized association information (contacts, social links, membership)
+- Nuit de l'Info event data (dates, deadlines, stats)
+- Info Evry specific NDI content (location, pricing, amenities)
+- Helper functions for date formatting
+- Computed values (auto-generated at build time)
+
+## Installation
+
+Add as a git submodule:
+
+```bash
+git submodule add https://github.com/info-evry/astro-knowledge.git knowledge
+```
 
 ## Structure
 
 ```
 src/
-├── ndi/
-│   ├── event.json       # Official NDI event information
-│   └── info-evry.json   # Info Evry specific NDI content
 ├── association/
-│   └── info.json        # Association information
-└── index.js             # Main export with helpers
+│   └── info.json         # Association details & contacts
+├── ndi/
+│   ├── event.json        # Official NDI event information
+│   └── info-evry.json    # Info Evry NDI site specifics
+├── computed.json         # Auto-generated computed values
+└── index.js              # Main export with helpers
 ```
 
 ## Usage
 
-### As a Git Submodule
-
-```bash
-git submodule add git@github.com:info-evry/astro-knowledge.git knowledge
-```
-
-### Import in Your Project
+### Direct JSON Imports
 
 ```javascript
-// Import everything
-import knowledge from './knowledge/src/index.js';
+// Association information
+import associationInfo from './knowledge/src/association/info.json';
 
-// Or import specific data
+console.log(associationInfo.name);           // "Asso Info Evry"
+console.log(associationInfo.contact.email);  // "contact@info-evry.fr"
+console.log(associationInfo.sites.asso.url); // "https://asso.info-evry.fr"
+
+// NDI event data
 import ndiEvent from './knowledge/src/ndi/event.json';
+
+console.log(ndiEvent.name);           // "Nuit de l'Info"
+console.log(ndiEvent.year);           // 2025
+console.log(ndiEvent.dates.start);    // "2025-12-04T15:34:00"
+console.log(ndiEvent.stats.participants2024); // 6027
+
+// Info Evry NDI specifics
 import ndiInfoEvry from './knowledge/src/ndi/info-evry.json';
 
-// Use helpers
-import { formatDate, formatDateTime } from './knowledge/src/index.js';
+console.log(ndiInfoEvry.location.venue);  // Venue details
+console.log(ndiInfoEvry.pricing);         // Registration prices
 ```
 
 ### In Astro Components
@@ -41,31 +63,87 @@ import { formatDate, formatDateTime } from './knowledge/src/index.js';
 ```astro
 ---
 import ndiEvent from '../knowledge/src/ndi/event.json';
-import ndiInfoEvry from '../knowledge/src/ndi/info-evry.json';
+import associationInfo from '../knowledge/src/association/info.json';
 ---
 
 <h1>{ndiEvent.name} {ndiEvent.year}</h1>
-<p>{ndiEvent.dates.startLabel}</p>
+<p>{ndiEvent.edition}</p>
+<p>Organisé par {associationInfo.fullName}</p>
+<a href={associationInfo.sites.ndi.url}>Inscriptions</a>
 ```
 
-## Content
+### Helper Functions
 
-### NDI Event (`ndi/event.json`)
-- Event name, year, edition
-- Official dates and times
-- Registration deadlines
-- Statistics from previous years
-- Official links
+```javascript
+import { formatDate, formatDateTime } from './knowledge/src/index.js';
 
-### NDI Info Evry (`ndi/info-evry.json`)
-- Site location
-- Registration prices
-- Amenities (food, networking)
-- Challenges (official + association)
-- Participant information
+// Format dates in French locale
+formatDate('2025-12-04');           // "4 décembre 2025"
+formatDateTime('2025-12-04T16:34'); // "4 décembre 2025 à 16h34"
+```
+
+## Data Reference
 
 ### Association (`association/info.json`)
-- Association details
-- University information
-- Contact information
-- Membership benefits
+
+| Field | Description |
+|-------|-------------|
+| `name` | Short name ("Asso Info Evry") |
+| `fullName` | Full name ("Association Info Evry") |
+| `description` | Association description |
+| `mission` | Mission statement |
+| `university` | University details (name, city, department) |
+| `sites` | URLs for asso, ndi, and join websites |
+| `contact` | Email addresses |
+| `social` | Social media links (Discord, Telegram, Instagram, GitHub) |
+| `resources` | Resource links (drive, eCampus) |
+| `membership` | Membership benefits list |
+
+### NDI Event (`ndi/event.json`)
+
+| Field | Description |
+|-------|-------------|
+| `name` | Event name ("Nuit de l'Info") |
+| `year` | Event year |
+| `edition` | Edition label |
+| `tagline` | Short description |
+| `description` | Full description |
+| `dates` | Start/end times, duration |
+| `deadlines` | Registration deadlines |
+| `stats` | Previous year statistics |
+| `structure` | Team size limits, max challenges |
+| `links` | Official website links |
+
+### NDI Info Evry (`ndi/info-evry.json`)
+
+| Field | Description |
+|-------|-------------|
+| `location` | Venue, room, address |
+| `pricing` | Registration prices |
+| `amenities` | Food, drinks, networking info |
+| `challenges` | Association-specific challenges |
+| `participant` | Max participants, requirements |
+
+### Computed Values (`computed.json`)
+
+Auto-generated at build time:
+- `ndi.registrationOpen` - Whether NDI registration is open
+- `ndi.daysUntilEvent` - Days until NDI starts
+- `ndi.daysUntilDeadline` - Days until registration closes
+
+## Updating Content
+
+1. Edit the relevant JSON file in `src/`
+2. Commit and push to trigger updates in consuming projects
+3. Run `git submodule update --remote knowledge` in each project
+
+## Related Repositories
+
+- [astro-design](https://github.com/info-evry/astro-design) - Shared design system
+- [astro-asso](https://github.com/info-evry/astro-asso) - Main association website
+- [astro-ndi](https://github.com/info-evry/astro-ndi) - NDI registration platform
+- [astro-join](https://github.com/info-evry/astro-join) - Membership portal
+
+## License
+
+MIT - Asso Info Evry
