@@ -3,12 +3,12 @@
   "academicYearStart": 2025,
   "academicYearEnd": 2026,
   "ndi": {
-    "year": 2025,
-    "date": "2025-12-04",
-    "dateFormatted": "Jeudi 4 décembre 2025",
+    "year": 2026,
+    "date": "2026-12-03",
+    "dateFormatted": "Jeudi 3 décembre 2026",
     "dayOfWeek": "Jeudi",
-    "startISO": "2025-12-04T15:34:00",
-    "endISO": "2025-12-05T07:04:00"
+    "startISO": "2026-12-03T15:34:00",
+    "endISO": "2026-12-04T07:04:00"
   },
-  "generatedAt": "2025-12-02T20:48:21.338Z"
+  "generatedAt": "2025-12-05T00:38:34.598Z"
 }

@@ -1,29 +1,29 @@
 {
   "name": "Nuit de l'Info",
-  "year": 2025,
-  "edition": "18ème édition",
+  "year": 2026,
+  "edition": "20ème édition",
   "tagline": "Le plus fun serious-game regroupant des milliers d'étudiants pour développer une application informatique en une nuit",
   "description": "La Nuit de l'Info est un défi national qui réunit chaque année des milliers d'étudiants en informatique de toute la France. Pendant une nuit entière, du coucher au lever du soleil, les équipes s'affrontent pour développer une application web sur un sujet révélé au dernier moment.",
   "dates": {
-    "start": "2025-12-04T15:34:00",
-    "end": "2025-12-05T07:04:00",
-    "startLabel": "Jeudi 4 décembre 2025, 16h34 (coucher du soleil)",
-    "endLabel": "Vendredi 5 décembre 2025, 08h04 (lever du soleil)",
+    "start": "2026-12-03T15:34:00",
+    "end": "2026-12-04T07:04:00",
+    "startLabel": "Jeudi 3 décembre 2026, 16h34 (coucher du soleil)",
+    "endLabel": "Vendredi 4 décembre 2026, 08h04 (lever du soleil)",
     "duration": "15h30",
     "durationLabel": "Du coucher au lever du soleil"
   },
   "deadlines": {
     "sites": {
-      "date": "2025-11-30T22:59:59",
-      "label": "Inscription des sites et défis : 30 novembre 2025 (minuit)"
+      "date": "2026-11-30T22:59:59",
+      "label": "Inscription des sites et défis : 30 novembre 2026 (minuit)"
     },
     "teams": {
-      "date": "2025-12-01T22:59:59",
-      "label": "Inscription des équipes : 1er décembre 2025 (minuit)"
+      "date": "2026-12-01T22:59:59",
+      "label": "Inscription des équipes : 1er décembre 2026 (minuit)"
     },
     "challenges": {
-      "date": "2025-12-04T20:30:00",
-      "label": "Sélection des défis : 4 décembre 2025 (21h30)"
+      "date": "2026-12-03T20:30:00",
+      "label": "Sélection des défis : 3 décembre 2026 (21h30)"
     }
   },
   "stats": {
